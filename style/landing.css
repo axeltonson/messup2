@@ -1,0 +1,104 @@
+
+/*
+    Landing Page
+*/
+
+body {
+    background: #42a5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 50px 100px;
+}
+
+ul {
+    display: flex;
+    padding: 30px;
+}
+
+a.waves-effect.waves-light.btn.white {
+    color: #000000;
+    margin-right: 30px;
+}
+
+a {
+    width: 150px;
+}
+
+.inner p {
+    width: 665px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.inner strong {
+    font-size: 56px;
+}
+
+.inner .wrapperButton {
+    text-align: center;
+}
+
+.inner button {
+    font-size: 30px;
+}
+/*MODAL*/
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.forgotPwd.col.s12 {
+    padding: 30px;
+    text-align: center;
+}
+
+.forgotPwd a {
+    color: #757575;
+}
+
+.forgotPwd a:hover {
+    color: #00b0ff;
+}
+
+a.modal-action.modal-close.waves-effect.waves-green.btn-large:last-child {
+    width: 100%;
+    text-align: center;
+    background: #42a5f5;
+    color: #000000;
+}
+
+.modal.modal-fixed-footer {
+    height: 100%;
+    padding: 10px 0;
+}
+
+i.modal-action.modal-close.waves-effect.waves-green.btn-large.waves-input-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.buttonInscript{
+    width: 300px;
+}
+
+.btn-large {
+    background:#FF6600;
+}
+
+.btn-large:hover {
+    background:#AA6600;
+}
