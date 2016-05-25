@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Regrouper ses messageries instantannées - Messup</title>
+    <link rel="stylesheet" href="style/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="libs/Materialize/dist/css/materialize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style/landing.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 
+<header>
+    <h1><img src="assets/img/LogoLandingPage.png" alt=""></h1>
+    <ul>
+        <li><a href="#modal1" class="modal-trigger waves-effect waves-light btn white">M'identifier</a></li>
+        <li><a href="#modal2" class="modal-trigger waves-effect waves-light btn">M'inscrire</a></li>
+    </ul>
+</header>
+<div class="inner">
+    <p>
+        <strong class="white-text">Et si vous n’utilisiez qu’une seule messagerie ?</strong>
+    </p>
+    <div class="wrapperButton">
+        <a href="#modal2" class="buttonInscript modal-trigger waves-effect waves-light btn-large">M’inscrire sur mess’up</a>
+    </div>
+</div>
 
+<!-- Modal Structure Connect-->
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h2>M'identifier</h2>
 
+        <form class="col s12" action="messup.html">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Mot de passe</label>
+                </div>
+                <div class="forgotPwd col s12">
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+                <input type="submit" class="modal-action modal-close waves-effect waves-green btn-large" value="Valider">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Structure Register -->
+<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h2>M'inscrire</h2>
+        <form class="col s12" action="messup.html">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="nickname" type="text" class="validate">
+                    <label for="nickname">Pseudonyme</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="emailRegister" type="email" class="validate">
+                    <label for="emailRegister">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="passwordRegister" type="password" class="validate">
+                    <label for="passwordRegister">Mot de passe</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="passwordRegisterAgain" type="password" class="validate">
+                    <label for="passwordRegisterAgain">Confirmer mot de passe</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="submit" class="modal-action modal-close waves-effect waves-green btn-large" value="Valider">
+                </div>
+        </form>
+    </div>
+</div>
 </body>
+
+<!-- libs -->
+<script src="./libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="./libs/Materialize/dist/js/materialize.min.js" charset="utf-8"></script>
 </html>
